@@ -231,6 +231,7 @@ class CourseController extends AppBaseController
         
         return view('courses.create')        
         ->with('categories', $categories)
+        ->with('course', $course)
         ->with( 'mainCourses', $mainCourses);
     }
 
@@ -276,7 +277,7 @@ class CourseController extends AppBaseController
         if($course->main_course_id){ //this is a summary course
             //find the main course
              $mainCourse = Course::where('id', $course->main_course_id)->first();
-
+            
         }
 
         //get the summary courses if this is a main course

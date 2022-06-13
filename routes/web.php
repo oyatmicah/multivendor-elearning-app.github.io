@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $categories= App\Models\Category::all();
-    $courses = App\Models\Course::all(); 
+    $categories = App\Models\Category::all();
+    $courses = App\Models\Course::all();
 
-    return view('welcome',compact('courses','categories'));
+    return view('welcome', compact('courses', 'categories'));
 });
 /*
 Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');

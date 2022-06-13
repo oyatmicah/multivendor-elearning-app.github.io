@@ -24,10 +24,9 @@
     <p style="font-size:28px; font-weight:bold;"><del style="text-decoration-style: double;">N </del>{{ $course->discount_price }}</p>
     <p style="font-size:20px;"><del style="text-decoration-style:double;">N {{ $course->actual_price }}</del></p>
     <a href="#" class="btn btn-lg btn-success">Buy Now <del style="text-decoration-style: double;">N </del>{{ $course->discount_price }}</a>
-
 </div>
 
-<!-- Description Field -->
+<!-- Description Field --> 
 <div class="col-sm-12">
     {!! Form::label('description', 'Description:') !!}
     <p>{{ $course->description }}</p>

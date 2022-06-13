@@ -8,12 +8,12 @@
                     <h1>Course Categories</h1>
                 </div>
                 @if(Auth::check() AND (Auth::user()->role_id < 3 || $course->user_id == Auth::user()->id))
-                <div class="col-sm-6">
-                    <a class="btn btn-primary float-right"
-                       href="{{ route('categories.create') }}">
-                        Add New
-                    </a>
-                </div>
+                    <div class="col-sm-6">
+                        <a class="btn btn-primary float-right"
+                        href="{{ route('categories.create') }}">
+                            Add New
+                        </a>
+                    </div>
                 @endif
             </div>
         </div>

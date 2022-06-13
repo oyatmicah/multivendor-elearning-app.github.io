@@ -37,7 +37,7 @@
                     </div>
                     {!! Form::close() !!}
                 </td>
-                @endif
+                @endif 
             </tr>
         @endforeach
         </tbody>
